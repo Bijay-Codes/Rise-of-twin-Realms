@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+    /* backgrounds */
+    --color-sec-accent: oklch(83.3% 0.170 96.8);
+    --color-accent: oklch(46.2% 0.215 296.3);
+    --color-page: oklch(24.0% 0.114 302.9);
+    --color-highlight: oklch(92.5% 0.204 118.9);
+    --color-lavender: oklch(86.0% 0.061 282.0);
+    --color-maroon: oklch(31.8% 0.131 348.6);
+    --color-surface: oklch(31.2% 0.131 289.5);
+
+    /* primary foregrounds (max contrast) */
+    --color-sec-accent-fg: oklch(0% 0 0);
+    --color-accent-fg: oklch(100% 0 0);
+    --color-page-fg: oklch(100% 0 0);
+    --color-higlight-fg: oklch(0% 0 0);
+    --color-lavender-fg: oklch(0% 0 0);
+    --color-maroon-fg: oklch(100% 0 0);
+    --color-surface-fg: oklch(100% 0 0);
+
+    /* muted foregrounds (≥4.5:1, AA floor) */
+    --color-sec-accent-muted: oklch(43.6% 0 0);
+    --color-accent-muted: oklch(83.2% 0 0);
+    --color-page-muted: oklch(62.2% 0 0);
+    --color-highlight-muted: oklch(51.2% 0 0);
+    --color-lavender-fg-muted: oklch(45.5% 0 0);
+    --color-maroon-fg-muted: oklch(67.8% 0 0);
+    --color-surface-muted: oklch(67.5% 0 0);
+}
