@@ -9,7 +9,7 @@ export function Popover() {
                 popover.current.close();
             }
         }}>
-            <section className="z-20 bg-surface h-60 w-30 outline outline-accent text-surface-fg p-4 ml-auto">
+            <section className="z-20 bg-surface max-h-60 max-w-40 outline outline-accent text-surface-fg p-4 ml-auto">
                 <Links />
             </section>
         </dialog>

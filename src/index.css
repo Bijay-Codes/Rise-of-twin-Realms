@@ -4,7 +4,7 @@
     /* backgrounds */
     --color-sec-accent: oklch(83.3% 0.170 96.8);
     --color-accent: oklch(46.2% 0.215 296.3);
-    --color-page: oklch(24.0% 0.114 302.9);
+    --color-page: oklch(10.0% 0.114 302.9);
     --color-highlight: oklch(92.5% 0.204 118.9);
     --color-lavender: oklch(86.0% 0.061 282.0);
     --color-maroon: oklch(31.8% 0.131 348.6);
@@ -13,7 +13,7 @@
     /* primary foregrounds (max contrast) */
     --color-sec-accent-fg: oklch(0% 0 0);
     --color-accent-fg: oklch(100% 0 0);
-    --color-page-fg: oklch(100% 0 0);
+    --color-page-fg: oklch(100% 0.02 0);
     --color-higlight-fg: oklch(0% 0 0);
     --color-lavender-fg: oklch(0% 0 0);
     --color-maroon-fg: oklch(100% 0 0);
