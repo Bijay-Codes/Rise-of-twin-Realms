@@ -1,33 +1,37 @@
+
 export function Hero() {
     return (
-        <main className="flex flex-col gap-3 mb-6">
-            <span className="text-sm">A Fantasy MMORPG game</span>
-            <h1 className="text-6xl">Rise of Twin Realms</h1>
-            <div className="text-3xl flex flex-col">
-                <span>Two dragons & </span>
-                <span>A Broken balance</span>
-            </div>
-            <h2 className="text-2xl max-w-140">Explore the diffrent realms, fight your foes and bring order. Thats your quest</h2>
-            <div className="inline-flex items-center gap-2">
-                <span
-                    className="h-2 w-2 rounded-full animate-pulse bg-emerald-400" />
-                <span className="text-sm">Active development and planning phase</span>
-            </div>
-            <CTA />
-            <span>Current version: 0.01GD</span>
+        <main className="w-full flex justify-center items-center">
+            <section className="grid grid-cols-1 sm:grid-cols-[1fr_auto] justify-center items-center p-6 w-full max-w-360">
+                <header className="flex flex-col gap-6">
+                    <h1 className="prim-head">Rise of Twin Realms</h1>
+                    <h2 className="sec-head max-w-200">Explore the vast world created by twin dragons,
+                        channel your strength and bring the balance back among them
+                    </h2>
+
+                    <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                        <h3>Active Development in progress</h3>
+                    </div>
+                    <h4>Become a hero</h4>
+                    <CTA />
+                </header>
+            </section>
         </main>
     )
 }
 
 function CTA() {
-    const sharedStyles = 'px-4 py-1 rounded'
+    const sharedStyles = 'px-6 py-3 rounded'
     return (
-        <div className="flex gap-4">
-            <button className={`${sharedStyles} bg-accent`}>
-                Join Discord
-            </button>
-            <button className={`${sharedStyles} bg-maroon`}>
-                Download now!
+        <div className="flex flex-col gap-6 text-xl">
+            <span>
+                Download the playtest version
+                <span className="text-sm px-2">V0.1GD</span>
+            </span>
+
+            <button className={` ${sharedStyles} bg-amber-300 text-black w-fit`}>
+                Download latest version
             </button>
         </div >
     )

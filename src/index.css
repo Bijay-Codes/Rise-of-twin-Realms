@@ -28,3 +28,28 @@
     --color-maroon-fg-muted: oklch(67.8% 0 0);
     --color-surface-muted: oklch(67.5% 0 0);
 }
+
+section {
+    height: 100dvh;
+    margin-bottom: 48px;
+}
+
+body {
+    background-color: var(--color-page);
+    color: var(--color-page-fg);
+}
+
+.prim-head {
+    font-size: clamp(4rem, 6vh, 10rem);
+}
+
+.sec-head {
+    font-size: clamp(1rem, 4vh, 4rem);
+}
+
+.lore-grid {
+    display: grid;
+    grid-template-areas:
+        'light dark'
+        'info info';
+}

@@ -1,23 +1,25 @@
 import { Navbar } from './components/navbar'
 import { Popover } from './components/popover'
 import { Hero } from './components/hero-content'
-import { Introduction } from './components/intro'
+import { LoreIntroduction } from './components/lore'
 import { CombatSection } from './components/combat-types'
 import { Realms } from './components/realms'
+import { Development } from './components/devlopment'
 import { Footer } from './components/footer'
 import './App.css'
 
 function App() {
 
   return (
-    <section className='bg-page text-page-fg h-full px-6'>
+    <section className='px-6 flex flex-col items-center'>
       <Navbar />
       <Popover />
-      <section>
+      <section className='px-6 z-10'>
         <Hero />
-        <Introduction />
-        <CombatSection />
+        <Development />
+        <LoreIntroduction />
         <Realms />
+        <CombatSection />
       </section>
       <Footer />
     </section>
