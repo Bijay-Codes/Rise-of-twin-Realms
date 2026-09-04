@@ -11,10 +11,10 @@ import './App.css'
 function App() {
 
   return (
-    <section className='px-6 flex flex-col items-center'>
+    <section className='sm:px-6 flex flex-col gap-12 items-center'>
       <Navbar />
       <Popover />
-      <section className='px-6 z-10'>
+      <section className='px-6 z-10 flex flex-col gap-20'>
         <Hero />
         <Development />
         <LoreIntroduction />

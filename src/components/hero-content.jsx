@@ -1,19 +1,18 @@
 
 export function Hero() {
     return (
-        <main className="w-full flex justify-center items-center">
-            <section className="grid grid-cols-1 sm:grid-cols-[1fr_auto] justify-center items-center p-6 w-full max-w-360">
-                <header className="flex flex-col gap-6">
-                    <h1 className="prim-head">Rise of Twin Realms</h1>
-                    <h2 className="sec-head max-w-200">Explore the vast world created by twin dragons,
-                        channel your strength and bring the balance back among them
-                    </h2>
-
+        <main className="max-w-360">
+            <section>
+                <header className=" flex flex-col gap-6 sm:gap-12">
+                    <h1 className="text-4xl font-extrabold">Rise of Twin Realms</h1>
+                    <div className="text-2xl ">
+                        <h2 className="max-w-180">Fight Dragons, Restore the balance,</h2>
+                        <span>Be the Hero</span>
+                    </div>
                     <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                        <span className="w-1 h-2 bg-emerald-400 animate-pulse" />
                         <h3>Active Development in progress</h3>
                     </div>
-                    <h4>Become a hero</h4>
                     <CTA />
                 </header>
             </section>
@@ -22,15 +21,14 @@ export function Hero() {
 }
 
 function CTA() {
-    const sharedStyles = 'px-6 py-3 rounded'
     return (
         <div className="flex flex-col gap-6 text-xl">
-            <span>
+            <span className="text-sm flex flex-col gap-1">
                 Download the playtest version
-                <span className="text-sm px-2">V0.1GD</span>
+                <span>V0.1GD</span>
             </span>
 
-            <button className={` ${sharedStyles} bg-amber-300 text-black w-fit`}>
+            <button className="bg-secondary text-secondary-fg w-fit px-4 py-2 rounded">
                 Download latest version
             </button>
         </div >
