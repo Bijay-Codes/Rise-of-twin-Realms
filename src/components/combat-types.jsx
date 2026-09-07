@@ -1,41 +1,41 @@
-export function CombatSection() {
+const CombatTypes = [
+    {
+        head: 'Warrior',
+        body: "You're in the thick of it. Close distance fast, take damage, hit back harder.No room to think, just react."
+    },
+    {
+        head: 'Ranged',
+        body: 'Distance is the whole strategy. Steady, consistent damage, as long as you never let them close in.'
+    },
+    {
+        head: 'Mage',
+        body: "Elemental damage from a distance — but you're fragile.Land your hits before anything reaches you."
+    },
+    {
+        head: 'Summoner',
+        body: 'Bring something else into the fight. Let it take the damage while you play the long game.'
+    }
+]
+export default function CombatSection() {
     const classes = 'bg-surface text-surface-fg p-4 rounded';
     return (
         <section id="classes" className="flex flex-col gap-12 max-w-360">
-            <div className="text-2xl font-extrabold flex flex-col mb-6">
+            <div className="text-2xl sm:text-4xl tracking-wide font-extrabold flex flex-col mb-6">
                 <span>Pick your class</span>
                 <span>Begin your journey</span>
             </div>
             <section className="md:grid md:grid-cols-[1fr_auto] flex flex-col gap-6 items-center justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <article className={classes}>
-                        <h1>Warrior</h1>
-                        <p>
-                            You're in the thick of it. Close distance fast, take damage, hit back harder.
-                            No room to think, just react.
-                        </p>
-                    </article>
-                    <article className={classes}>
-                        <h1>Ranged</h1>
-                        <p>
-                            Distance is the whole strategy. Steady, consistent damage, as long as you
-                            never let them close in.
-                        </p>
-                    </article>
-                    <article className={classes}>
-                        <h1>Mage</h1>
-                        <p>
-                            Elemental damage from a distance — but you're fragile. Land your hits before
-                            anything reaches you.
-                        </p>
-                    </article>
-                    <article className={classes}>
-                        <h1>Summoner</h1>
-                        <p>
-                            Bring something else into the fight. Let it take the damage while you play the
-                            long game.
-                        </p>
-                    </article>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    {CombatTypes.map(combat => {
+                        return (
+                            <article key={combat.head} className={classes}>
+                                <h1 className="sm:text-2xl font-bold uppercase">{combat.head}</h1>
+                                <p className="sm:text-lg">
+                                    {combat.body}
+                                </p>
+                            </article>
+                        )
+                    })}
 
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="rotate-24 md:h-full h-20 min-h-40 aspect-square overflow-clip"><desc>
